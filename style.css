@@ -1,0 +1,214 @@
+body {
+    background-color: #c7b8b8; /* Color de fondo de la página */
+}
+
+h1 {
+    color: #333; /* Color del título principal */
+    font-family: Arial, sans-serif; /* Tipo de fuente para el título */
+    font-size: 30px; /* Tamaño de fuente para el título */
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #666; /* Color del texto de los párrafos */
+     /* Tamaño de fuente para los párrafos */
+    text-align: justify;
+}
+
+li span {
+    font-size: 17px;
+    text-decoration-line: underline;
+}
+
+header {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+main {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 75%;
+    height: 37%;
+}
+
+video {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 75%;
+    height: 37%;
+}
+
+/* Diseno Tabla*/
+table {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid;
+    padding: 8px;
+    background: #a19e9e;
+}
+
+td {
+    color: #666; /* Color del texto de los párrafos */
+    font-size: 17px; /* Tamaño de fuente para los párrafos */
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid;
+    padding: 8px;
+}
+/* Fin Diseno Tabla*/
+
+/* Diseno Lista*/
+ol {
+    counter-reset: li; 
+    list-style: none; 
+    /* list-style: decimal;  */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    /* *padding: .4em; */
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    text-align: justify;
+}
+
+ol li:hover{
+    background: #eee;
+}   
+
+ol li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+ol li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+ol li:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+/* Fin Diseno Lista*/
+
+/* Diseno Menu*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+/* Fin Diseno Menu*/
+
+/* Diseno Formulario*/
+input[type=text],input[type=email],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 25%;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    margin: auto; 
+    display: block;
+}
+  
+input[type=submit]:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+/*Fin Diseno Formulario*/
